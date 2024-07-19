@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
                 'nvim-treesitter/nvim-treesitter',
                 run = ":TSUpdate"
         }
-        
+         
         -- lsp
         use {
                 "williamboman/mason.nvim",

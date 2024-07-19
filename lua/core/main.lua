@@ -3,14 +3,13 @@ vim.opt.showcmd = truu
 vim.opt.relativenumber = true
 vim.o.termguicolors = true
 
--- tabs and spaces
+-- tabs and sp	aces
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
 
--- keymrap
+-- keymap
 vim.g.mapleader = " "
 vim.keymap.set("n",   "<leader>pv", vim.cmd.Ex)
-
 -- color
 function ColorVim(color)
         color = color or "material"
