@@ -23,7 +23,11 @@ return require('packer').startup(function(use)
         }
         use "stevearc/conform.nvim"
         use 'mfussenegger/nvim-lint'
-        use 'numToStr/prettierrc.nvim'
+        use "hrsh7th/nvim-cmp"                  -- completion plugin
+        use "hrsh7th/cmp-nvim-lsp"              -- completion plugin
+        use "hrsh7th/cmp-buffer"                -- source for text in buffer
+        use "L3MON4D3/LuaSnip"                  -- snippet engine
+        use "saadparwaiz1/cmp_luasnip"          -- for autocompletion
         --theme
         use 'kaicataldo/material.vim'
   if packer_bootstrap then
