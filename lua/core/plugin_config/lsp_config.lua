@@ -4,8 +4,9 @@ require("mason-lspconfig").setup({
                 "pyright", 
                 "ruff", 
                 "ruff_lsp", 
+                "tsserver",
         }
 })
 require("lspconfig").pyright.setup {}
 require("lspconfig").ruff_lsp.setup {}
-
+require("lspconfig").tsserver.setup {}

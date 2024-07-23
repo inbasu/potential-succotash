@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
         }
         use "stevearc/conform.nvim"
         use 'mfussenegger/nvim-lint'
-
+        use 'numToStr/prettierrc.nvim'
         --theme
         use 'kaicataldo/material.vim'
   if packer_bootstrap then
