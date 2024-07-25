@@ -1,5 +1,6 @@
 -- base
-vim.opt.showcmd = truu
+vim.opt.showcmd = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.termguicolors = true
 
