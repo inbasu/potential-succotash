@@ -4,7 +4,7 @@ require("mason-lspconfig").setup({
                 "pyright", 
                 "ruff", 
                 "ruff_lsp", 
-                "tsserver",
+                "ts_ls",
         }
 })
 require("lspconfig").pyright.setup {}
@@ -14,6 +14,6 @@ require("lspconfig").ruff_lsp.setup {
 require("lspconfig").gopls.setup {
         capabilities = require('cmp_nvim_lsp').default_capabilities()
 }
-require("lspconfig").tsserver.setup {}
+require("lspconfig").ts_ls.setup {}
 
 
