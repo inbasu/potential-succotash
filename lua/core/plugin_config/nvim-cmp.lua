@@ -2,7 +2,6 @@ local cmp = require("cmp")
 
 
 cmp.setup {
-        
         window = {},
         snippet = {
                 expand = function(args)
