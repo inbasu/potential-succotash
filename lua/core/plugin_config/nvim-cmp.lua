@@ -2,7 +2,11 @@ local cmp = require("cmp")
 
 
 cmp.setup {
-        window = {},
+        window = {
+                documentation = {
+                        winhighlight = "Normal:Pmenu",
+                },
+        },
         snippet = {
                 expand = function(args)
                 require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
@@ -29,7 +33,7 @@ cmp.setup {
         }),
 
         sources = cmp.config.sources({
-                { name = 'nvim_lsp' },
+                { name = 'nvim_lsp', keyword_length = 3 },
                 { name = 'luasnip' },
                 { name = 'buffer' }, 
         })
