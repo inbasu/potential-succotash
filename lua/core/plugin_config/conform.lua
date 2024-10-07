@@ -13,7 +13,11 @@ require("conform").setup({
     formatters = {
             black = {
                 prepend_args = {"--line-length", "120"}
-                }
+                },
+            isort = {
+                prepend_args = {"--profile", "black"}    
+            }
+                
     }
 }) 
 
